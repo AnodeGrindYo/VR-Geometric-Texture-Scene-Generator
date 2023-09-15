@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR Geometric Textures Test</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+  <div id="loadingScreen" style="position: fixed; width: 100%; height: 100%; background-color: black; color: white; display: flex; justify-content: center; align-items: center; z-index: 9999;">
+    <div class="loadingMessage">
+      Chargement des textures...
+    </div>
+  </div>
+  
+  <a-scene id="scene">
+    <a-assets timeout="10000">  
+      <img id="texture0" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456342956916876/generated_mirror340.png">
+      <img id="texture1" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456343451828404/generated_mirror339.png">
+      <img id="texture2" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456344647221278/generated_mirror330.png">
+      <img id="texture3" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456344995332176/generated_mirror328.png">
+      <img id="texture4" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456345343475823/generated_mirror327.png">
+      <img id="texture5" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456345649643550/generated_mirror326.png">
+      <img id="texture6" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456870289965127/generated_mirror320.png">
+      <img id="texture7" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456870587781190/generated_mirror319.png">
+      <img id="texture8" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456870927499304/generated_mirror321.png">
+      <img id="texture9" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456871363727360/generated_mirror315.png">
+      <img id="texture10" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456872013832202/generated_mirror316.png">
+      <img id="texture11" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456872630386708/generated_mirror303.png">
+      <img id="texture12" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456873125335061/generated_mirror302.png">
+      <img id="texture13" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456873649602560/generated_mirror301.png">
+      <img id="texture14" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456873980973078/generated_mirror300.png">
+      <img id="texture15" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149456874517831720/generated_mirror297.png">
+      <img id="texture16" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149457367575052451/generated_mirror296.png">
+      <img id="texture17" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149457368019644567/generated_mirror295.png">
+      <img id="texture18" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149457368501985310/generated_mirror294.png">
+      <img id="texture19" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149457368879480983/generated_mirror290.png">
+      <img id="texture20" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149457369223409694/generated_mirror289.png">
+      <img id="texture21" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149457369592504440/2Fstorage2Femulated2F02FAndroid2Fdata2Fcom.miui.gallery2Fcache2FSecurityShare2F1678629897024_mirror2.png">
+      <img id="texture22" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149457370355871855/generated_mirror286.png">
+      <img id="texture23" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149457370888544267/generated_mirror277.png">
+      <img id="texture24" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149457371144405112/generated_mirror276.png">
+      <img id="texture25" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149458325906411600/generated_mirror194.jpg">
+      <img id="texture26" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149458326158049341/generated_mirror190.jpg">
+      <img id="texture27" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149458850290868314/generated_mirror163.jpg">
+      <img id="texture28" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149458850739671090/generated_mirror165.jpg">
+      <img id="texture29" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149458851041656992/generated_mirror164.jpg">
+      <img id="texture30" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149458851431731291/generated_mirror161.jpg">
+      <img id="texture31" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149458851716939796/generated_mirror159.jpg">
+      <img id="texture32" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149458852702601266/generated_mirror156.jpg">
+      <img id="texture33" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149458853008777227/generated_mirror155.jpg">
+      <img id="texture34" crossorigin="anonymous"  src="https://cdn.discordapp.com/attachments/932672918859702355/1149458853268836362/generated_mirror154.jpg">
+    </a-assets>  
+    <a-sky id="sky"></a-sky>
+    <!--   <a-plane id="ground" rotation="-90 0 0" width="100" height="100"></a-plane> -->
+    <a-entity id="city"></a-entity>
+  </a-scene>
+  <script src="./script.js"></script>
+</body>
+</html>
